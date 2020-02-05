@@ -1,0 +1,74 @@
+// Global mixins
+// Fonts
+// font-family: 'Vollkorn', serif;
+// font-family: 'Lustria', serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+// Font mixin
+@mixin font($family, $size, $weight, $color, $margin) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    margin: $margin;
+}
+
+// Titles Font mixin
+@mixin tittle() {
+    font-family: 'Vollkorn', serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: $zp-color-oil;
+
+    @media only screen and (min-width: 700px) {
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+    }
+
+    @media only screen and (min-width: 1900px) {
+
+    }
+}
+
+// Subtittles Font mixin
+@mixin subtittle() {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: $zp-color-red;
+
+    @media only screen and (min-width: 700px) {
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+    }
+
+    @media only screen and (min-width: 1900px) {
+
+    }
+}
+
+
+// Texts Font mixin
+@mixin text() {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+
+    @media only screen and (min-width: 700px) {
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+    }
+
+    @media only screen and (min-width: 1900px) {
+    }
+}
